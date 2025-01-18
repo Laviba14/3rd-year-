@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="#E42828"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="57dp"
+            android:layout_height="48dp"
+            android:src="@drawable/baseline_arrow_back_24"
+            android:background="@null"
+            android:contentDescription="Back" />
+
+
+        <ImageButton
+            android:id="@+id/menu_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/baseline_menu_24"
+            android:background="@null"
+            android:contentDescription="Menu"
+            android:layout_gravity="end" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- Notice Board Content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/notice_board"
+            android:textSize="25sp"
+            android:textColor="#354CC8"
+            android:textStyle="bold"
+            android:layout_gravity="center" />
+
+        <!-- Links -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lu Transport schedule (2024)"
+            android:textSize="18sp"
+            android:layout_marginTop="30dp"
+            android:textColor="@android:color/holo_green_dark"
+            android:autoLink="web"
+            android:textStyle="italic"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lu Transport schedule (2024)"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            android:textColor="@android:color/holo_green_dark"
+            android:autoLink="web" />
+    </LinearLayout>
+
+</LinearLayout>
