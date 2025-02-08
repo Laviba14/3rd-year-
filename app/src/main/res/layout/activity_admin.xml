@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@android:color/white">
+
+    <!-- Back Button -->
+    <ImageView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/baseline_arrow_back_24"
+        android:contentDescription="Back"
+        android:onClick="onBackPressed"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Admin Profile"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- New Username Field -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/border"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:padding="5dp"
+            android:src="@drawable/baseline_person_24" />
+
+        <EditText
+            android:id="@+id/et_new_username"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="New username"
+            android:background="@null"
+            android:padding="10dp"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- Current Password Field -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/border"
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/baseline_lock_outline_24"
+            android:padding="5dp"/>
+
+        <EditText
+            android:id="@+id/et_current_password"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:hint="Current Password"
+            android:inputType="textPassword"
+            android:textSize="16sp"
+            android:background="@null"
+            android:padding="10dp"/>
+
+        <ImageView
+            android:id="@+id/toggle_current_password"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/baseline_remove_red_eye_24"/>
+    </LinearLayout>
+
+    <!-- New Password Field -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/border"
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="20dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="48dp"
+            android:src="@drawable/baseline_lock_outline_24"
+            android:padding="5dp"/>
+
+        <EditText
+            android:id="@+id/et_new_password"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:hint="New Password"
+            android:inputType="textPassword"
+            android:textSize="16sp"
+            android:background="@null"
+            android:padding="10dp"/>
+
+        <ImageView
+            android:id="@+id/toggle_new_password"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/baseline_remove_red_eye_24"/>
+    </LinearLayout>
+
+    <!-- Save Changes Button -->
+    <Button
+        android:id="@+id/btn_save_changes"
+        android:layout_width="262dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#7CD373"
+        android:padding="12dp"
+        android:text="Save Changes"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+</LinearLayout>
